@@ -66,7 +66,15 @@ header {
 	width: 100%;
 }
 
-li {
+.logo {
+	height: 150px;
+	width: 100%;
+	background-image: url(../views/logo.jpg);
+	background-size: 57%;
+	background-repeat: no-repeat;
+}
+
+ul.navPane li {
 	position: relative;
 	float: right;
 	display: inline-block;
@@ -74,18 +82,22 @@ li {
 	border-right: 3px solid white;
 	padding: 3px;
 	padding-right: 12px;
-	bottom: -15.5px;
+	bottom: -31.5px;
 
 }
 
-li:first-child {
-	border-right: 3px solid black;
+ul.navPane li:first-child {
+	border: none;
 }
 
-li:hover {
+ul.navPane li a {
+	text-decoration: none;
+	color: white;
+}
+
+ul.navPane li a:hover {
 	transition-duration: 2s;
 	color: #992211;
-	border-color:#992211;
 }
 
 
@@ -94,12 +106,13 @@ li:hover {
 }
 
 section {
-	border: white 1px solid;
+	border: black 0px solid;
 	height:150px;
 }
 
 div {
-	border: white 1px dotted;
+	border:black solid;
 	height:75px;
 	float: left;
 }
+
